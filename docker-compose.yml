@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  scripts:
+    build: .
+    environment:
+      - ARGS=/usr/local/src/scripts/OurExperiments/SZZ-TSE ns
+    volumes:
+      - 'results:/usr/local/src'
+  
+volumes:
+  results:
